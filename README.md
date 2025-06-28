@@ -16,9 +16,18 @@ print("COMPUTER CHOICE:- " , revesreDICT[computer])
 
 if (computer == you):
     print("it is draw!")
-elif (computer - you == 2 or computer - you == -1):
-    print("YOU WIN!")
-elif (computer - you == -2 or computer - you == 1):
-    print("YOU LOSE!")
 else:
-    print("SOMETHING WENT WRONG!")
+    if(computer == 1 and you == 0):
+        print("YOU LOSE!")
+    elif(computer == 1 and you == -1):
+        print("YOU WIN!")
+    elif(computer == 0 and you == -1):
+        print("YOU LOSE!")
+    elif(computer == 0 and you == 1):
+        print("YOU WIN!")
+    elif(computer == -1 and you == 1):
+        print("YOU LOSE!")
+    elif(computer == -1 and you == 0):
+        print("YOU WIN!")
+    else:
+        print("SOMETHING WENT WRONG")
